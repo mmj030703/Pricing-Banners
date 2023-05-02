@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Secular+One&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #5422ff;
+        }
+
+        .mainContainer {
+            text-align: center;
+            width: 100%;
+        }
+
+        .paraOne {
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 23px;
+            letter-spacing: 5px;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            margin-left: 20px;
+        }
+
+        .paraTwo {
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-family: 'Righteous', cursive;
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            margin: -59px 0 -59px 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 150px 0px;
+            width: 100%;
+            min-width: 80%;
+            height: 600px;
+        }
+
+        .container .priceBox {
+            background-color: white;
+            margin-left: 20px;
+            padding: 30px 40px;
+            height: 430px;
+            width: 290px;
+            border-radius: 10px;
+        }
+
+        .container .priceBox ul {
+            list-style: none;
+        }
+
+        #priceBox2 {
+            height: 485px;
+            width: 290px;
+            margin-top: -55px;
+        }
+
+        #priceBox2 .mostPopular {
+            margin-top: -30px;
+            margin-bottom: 30px;
+            background-color: bisque;
+            padding: 15px 6px;
+            font-family: system-ui;
+            color: #5422ff;
+            letter-spacing: 0.6px;
+            font-size: 20.5px;
+            font-weight: 700;
+        }
+
+        .emoji {
+            font-size: 45px;
+            margin-top: -10px;
+        }
+
+        .name {
+            font-family: Arial, Helvetica, sans-serif;
+            color: goldenrod;
+            font-size: 25px;
+            margin: 15px 0;
+        }
+
+        .dollar {
+            font-size: 25px;
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #5422ff;
+            margin-top: 0px;
+        }
+
+        .price {
+            font-size: 2em;
+            font-weight: bold;
+            margin-left: -5px;
+        }
+
+        .description {
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 15px;
+            color: #8f8d8d;
+            margin: 25px;
+            margin-bottom: 30px;
+        }
+
+        .description li {
+            margin: 10px;
+        }
+
+        .startBtn {
+            color: #5422ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            text-decoration: underline;
+            padding: 10px 45px;
+        }
+
+        #personalBtn {
+            color: white;
+            background-color: #5422ff;
+            padding: 10px 45px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+      
+      @media screen and (max-width: 1000px) {
+         .mainContainer {
+            text-align: center;
+            width: 100%;
+<!--             -->
+        }
+
+        .paraOne {
+<!--            -->
+            font-size: 15px;
+        }
+
+        .paraTwo {
+            font-size: 35px;
+        }
+
+        .container {
+            width: 100%;
+            min-width: 80%;
+            height: 600px;
+        }
+
+        .container .priceBox {
+            height: 370px;
+            width: 185px;
+        }
+
+        .container .priceBox ul {
+            list-style: none;
+        }
+
+        #priceBox2 {
+            height: 420px;
+            width: 230px;
+        }
+
+        #priceBox2 .mostPopular {
+            font-size: 18.5px;
+        }
+
+        .emoji {
+            font-size: 35px;
+        }
+
+        .name {           
+            font-size: 20px;
+        }
+
+        .dollar {
+            font-size: 20px;
+        }
+
+        .price {
+            font-size: 1.7em;
+        }
+
+        .description {
+            font-size: 13px;
+            margin: 15px 0 30px 0;
+        }
+
+        .description li {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .startBtn {
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        #personalBtn {
+            padding: 10px 20px;
+        }
+        
+        
+        @media screen and (max-width: 690px) {
+         .mainContainer {
+            text-align: center;
+            width: 100%;
+        }
+
+        .paraOne {
+            font-size: 17px;
+        }
+
+        .paraTwo {
+            font-size: 25px;
+        }
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            margin: 55px 0;
+        }
+
+        .container .priceBox {
+            height: 350px;
+            width: 265px;
+            margin: 30px 0 10px 0;
+        }
+
+        #priceBox2 {
+            height: 390px;
+            width: 265px;
+            margin: 0px 0 -20px 0;
+        }
+
+          
+        @media screen and (max-width: 440px) {
+        .paraOne {
+            font-size: 12px;
+            margin: 65px -5px;
+        }
+
+        .paraTwo {
+            font-size: 15px;
+            margin-left: 4px;
+        }
+       }
+          
+        @media screen and (max-width: 310px) {
+        .paraOne {
+            font-size: 12px;
+        }
+        .paraTwo {
+            font-size: 15px;
+        }
+      }
+          
+          
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <p class="paraOne">START NOW</p>
+        <p class="paraTwo">Your plan, your choice.</p>
+        <div class="container">
+            <div class="priceBox" id="priceBox1">
+                <p class="emoji">&#128522;</p>
+                <p class="name">Starter</p>
+                <p class="dollar">$
+                    <span class="price">49</span>
+                </p>
+                <ul class="description">
+                    <li>No setup fee</li>
+                    <li>Unlimited products</li>
+                    <li>Mobile storefront</li>
+                    <li>Mobile app</li>
+                </ul>
+                <a href="#getstarted" class="startBtn">Get Started</a>
+            </div>
+            <div class="priceBox" id="priceBox2">
+                <p class="mostPopular">MOST POPULAR</p>
+                <p class="emoji">&#128516;</p>
+                <p class="name">Personal</p>
+                <p class="dollar">$
+                    <span class="price">99</span>
+                </p>
+                <ul class="description">
+                    <li>No setup fee</li>
+                    <li>Unlimited products</li>
+                    <li>Mobile storefront</li>
+                    <li>Mobile app</li>
+                </ul>
+                <a href="#getstarted" class="startBtn" id="personalBtn">Get Started</a>
+            </div>
+            <div class="priceBox" id="priceBox3">
+                <p class="emoji">&#128558;</p>
+                <p class="name">Team</p>
+                <p class="dollar">$
+                    <span class="price">299</span>
+                </p>
+                <ul class="description">
+                    <li>No setup fee</li>
+                    <li>Unlimited products</li>
+                    <li>Mobile storefront</li>
+                    <li>Mobile app</li>
+                </ul>
+                <a href="#getstarted" class="startBtn">Get Started</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
